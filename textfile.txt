@@ -1,0 +1,2 @@
+This is a text for the sample file
+additional data appended onto the file
