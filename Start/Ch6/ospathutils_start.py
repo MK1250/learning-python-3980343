@@ -11,19 +11,19 @@ from os import path
 print(os.name)
 
 # Check for item existence and type
-print("Item exists: ", path.exists("textfile.txt"))
-print("Item is a file: ", path.isfile("textfile.txt"))
+print("Item exists: ", path.exists("newfile.txt"))
+print("Item is a file: ", path.isfile("newfile.txt"))
 
 # Work with file paths
-print("Item's path: ", path.realpath("textfile.txt"))
-print("Item's path and name: ", path.split(path.realpath("textfile.txt")))
+print("Item's path: ", path.realpath("newfile.txt"))
+print("Item's path and name: ", path.split(path.realpath("newfile.txt")))
 
 # Get the modification time
-t = time.ctime(path.getmtime("textfile.txt"))
+t = time.ctime(path.getmtime("newfile.txt"))
 print(t)
-print(datetime.fromtimestamp(path.getmtime("textfile.txt")))
+print(datetime.fromtimestamp(path.getmtime("newfile.txt")))
 
 # Calculate how long ago the item was modified
-td = datetime.now() - datetime.fromtimestamp(path.getmtime("textfile.txt"))
+td = datetime.now() - datetime.fromtimestamp(path.getmtime("newfile.txt"))
 print(f"It has been {td} since the file was modified")
 print(f"Or, {td.total_seconds()} seconds")
